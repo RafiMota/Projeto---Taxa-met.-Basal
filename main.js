@@ -33,13 +33,26 @@
         console.log(atvSelecionada)
         */
 
+        // if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined || atvSelecionada == undefined) {
+        //     document.getElementById("resultado").innerHTML = ""
+        // } else {
+        //     if (genSelecionado == "masculino") {
+        //         resultado = parseFloat(atvSelecionada) * (66 + ((13.7 * parseInt(peso)) + (5 * parseInt(altura)) - (6.8 * parseInt(idade))))
+        //     } else if (genSelecionado == "feminino") {
+        //         resultado = parseFloat(atvSelecionada) * (655 + ((9.6 * parseInt(peso)) + (1.8 * parseInt(altura)) - (4.7 * parseInt(idade))))
+        //     }
+        //     document.getElementById("resultado").innerHTML = "Seu consumo diário é de " + parseInt(resultado) + "Kcal"
+        // }
+
+        // Fórmula Mifflin St Jeor
+
         if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined || atvSelecionada == undefined) {
             document.getElementById("resultado").innerHTML = ""
         } else {
             if (genSelecionado == "masculino") {
-                resultado = parseFloat(atvSelecionada) * (66 + ((13.7 * parseInt(peso)) + (5 * parseInt(altura)) - (6.8 * parseInt(idade))))
+                resultado = parseFloat(atvSelecionada) * (5 + ((10 * parseInt(peso)) + (6.25 * parseInt(altura)) - (5 * parseInt(idade))))
             } else if (genSelecionado == "feminino") {
-                resultado = parseFloat(atvSelecionada) * (655 + ((9.6 * parseInt(peso)) + (1.8 * parseInt(altura)) - (4.7 * parseInt(idade))))
+                resultado = parseFloat(atvSelecionada) * (-161 + ((10 * parseInt(peso)) + (6.25 * parseInt(altura)) - (5 * parseInt(idade))))
             }
             document.getElementById("resultado").innerHTML = "Seu consumo diário é de " + parseInt(resultado) + "Kcal"
         }
