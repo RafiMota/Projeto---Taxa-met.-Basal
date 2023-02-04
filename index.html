@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cálculo de Metabolismo Basal</title>
+		<link rel="stylesheet" href="CSS/reset.css" />
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="icon" type="image/x-icon" href="assets/logo site.png" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Calculadora de TMB</h1>
+			<!-- <h2></h2> -->
+		</header>
+
+		<main>
+			<form action="main.js" method="post">
+				<section class="coluna">
+					<h2><strong>1°</strong> Informe suas medidas</h2>
+					<span><img src="assets/peso - tema escuro.png" alt=""></span>
+					<label>Peso</label>
+					<input
+						id="peso"
+						type="text"
+						placeholder="Kg"
+						onblur="getVal()"
+						maxlength="3"
+					/>
+					<span><img src="assets/idade - tema escuro.png" alt=""></span>
+					<label>Idade</label>
+					<input
+						id="idade"
+						type="text"
+						placeholder="Anos"
+						onblur="getVal()"
+						maxlength="3"
+					/>
+					<span><img src="assets/altura - tema escuro.png" alt=""></span>
+					<label>Altura</label>
+					<input
+						id="altura"
+						type="text"
+						placeholder="Cm"
+						onblur="getVal()"
+						maxlength="3"
+					/>
+				</section>
+
+				<section class="coluna">
+					<h2><strong>2°</strong> Informe seu gênero</h2>
+
+					<label>Masculino</label>
+					<input
+						type="radio"
+						name="genero"
+						value="masculino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Feminino</label>
+					<input
+						type="radio"
+						name="genero"
+						value="feminino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+				</section>
+			</form>
+
+			<section class="coluna">
+				<h2><strong>3°</strong> Informe seu nível de atividade</h2>
+				<label>Sedentário</label>
+					<input
+						type="radio"
+						name="genero"
+						value="masculino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Ativo</label>
+					<input
+						type="radio"
+						name="genero"
+						value="feminino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Altamente ativo</label>
+					<p>sts</p>
+					<input
+						type="radio"
+						name="genero"
+						value="feminino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+			</section>
+
+			<p id="resultado"></p>
+		</main>
+
+		<script src="main.js"></script>
+	</body>
+</html>

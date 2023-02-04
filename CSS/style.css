@@ -1,0 +1,96 @@
+::selection {
+    background: #000;
+    color: #fff ;
+}
+
+html {
+    background: rgb(62, 81, 116);
+
+    font-size: 62.5%;
+    background: #252525;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    padding: 1rem;
+    font-size: 5.0rem;
+    font-weight: 400;
+}
+
+h2 {
+    padding-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+label {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+header {
+    padding: 6rem;
+    text-align: center;
+    background: #171717;
+}
+
+span>img {
+    width: 4rem;
+    position: relative;
+    float: left;
+    left: 30%;
+    /* display: block; */
+    /* left: 15rem; */
+    /* bottom: -5rem; */
+    /* background: #fff; */
+}
+
+
+.coluna {
+    float: left;
+    width: 33.33%;
+    padding-top: 5rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .coluna {
+      width: 100%;
+    }
+  }
+
+section>p {
+    margin: 10px;
+    font-size: 3rem;
+    font-weight: 200;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+p#resultado {
+    margin: 10rem;
+    font-size: 5.0rem;
+    text-align: center;
+    font-weight: 100;
+}
+
+input {
+    border-radius: 5rem;
+    border-width: 0rem;
+    border-color: black;
+    accent-color: red;
+
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
