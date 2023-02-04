@@ -19,7 +19,7 @@
 	<body>
 		<header>
 			<h1>Calculadora de TMB</h1>
-			<!-- <h2></h2> -->
+			<h2>Um projeto do Rafí.</h2>
 		</header>
 
 		<main>
@@ -32,7 +32,7 @@
 						id="peso"
 						type="text"
 						placeholder="Kg"
-						onblur="getVal()"
+						onblur="attVal()"
 						maxlength="3"
 					/>
 					<span><img src="assets/idade - tema escuro.png" alt="" /></span>
@@ -41,7 +41,7 @@
 						id="idade"
 						type="text"
 						placeholder="Anos"
-						onblur="getVal()"
+						onblur="attVal()"
 						maxlength="3"
 					/>
 					<span><img src="assets/altura - tema escuro.png" alt="" /></span>
@@ -50,7 +50,7 @@
 						id="altura"
 						type="text"
 						placeholder="Cm"
-						onblur="getVal()"
+						onblur="attVal()"
 						maxlength="3"
 					/>
 				</section>
@@ -61,6 +61,7 @@
 					<label>Masculino</label>
 					<input
 						type="radio"
+						class="radio_input"
 						name="genero"
 						value="masculino"
 						maxlength="3"
@@ -69,6 +70,7 @@
 					<label>Feminino</label>
 					<input
 						type="radio"
+						class="radio_input"
 						name="genero"
 						value="feminino"
 						maxlength="3"
@@ -79,35 +81,41 @@
 				<section class="coluna">
 					<h2><strong>3°</strong> Informe seu nível de atividade</h2>
 					<label>Sedentário</label>
+					<p>Não pratica exercícios físicos</p>
 					<input
 						type="radio"
+						class="radio_input"
 						name="atividade"
-						value="masculino"
+						value="1.2"
 						maxlength="3"
-						onclick="atvMod()"
+						onclick="attVal()"
 					/>
-					<label>Regularmente ativo</label>
+					<label>Moderadamente ativo</label>
 					<p>Exercita-se de 3 a 4 vezes na semana</p>
 					<input
 						type="radio"
+						class="radio_input"
 						name="atividade"
-						value="feminino"
+						value="1.55"
 						maxlength="3"
-						onclick="atvMod()"
+						onclick="attVal()"
 					/>
 					<label>Altamente ativo</label>
 					<p>Exercita-se de 5 a 6 vezes na semana</p>
 					<input
 						type="radio"
+						class="radio_input"
 						name="atividade"
-						value="feminino"
+						value="1.725"
 						maxlength="3"
-						onclick="atvMod()"
+						onclick="attVal()"
 					/>
 				</section>
 			</form>
 			<p id="resultado"></p>
 		</main>
+
+		<footer></footer>
 
 		<script src="main.js"></script>
 	</body>
