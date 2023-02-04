@@ -12,22 +12,11 @@
 
 let resultado
 let modGenero
+let genSelecionado
 let peso, altura, idade
-
-// function attVal() {
-//     let genero = document.getElementsByName("genero").value
-
-//     if(genero == "masculino") {
-//         resultado = (66 + ((13.7 * parseInt(peso)) + (5 * parseInt(altura)) - (6.8 * parseInt(idade))))
-//     } else if (genero == "feminino") {
-//         resultado = (655 + ((9.6 * parseInt(peso)) + (1.8 * parseInt(altura)) - (4.7 * parseInt(idade))))
-//     }
-//     console.log(genero)
-// }
 
 function attVal() {
     let radioBtn = document.querySelectorAll('input[name="genero"]')
-    let genSelecionado
 
     for(radioBtn of radioBtn) {
         if (radioBtn.checked) {
@@ -39,7 +28,7 @@ function attVal() {
     console.log(genSelecionado)
 
 
-    if(peso == 0 || idade == 0 || altura == 0) {
+    if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined) {
         document.getElementById("resultado").innerHTML = ""
     } else {
         if (genSelecionado == "masculino") {
@@ -56,9 +45,6 @@ function getVal() {
     peso = document.getElementById("peso").value
     idade = document.getElementById("idade").value
     altura = document.getElementById("altura").value
-    resultado = (66 + ((13.7 * parseInt(peso)) + (5 * parseInt(altura)) - (6.8 * parseInt(idade))))
-    
-    
     //{66 + [(13,7 x Peso(kg)) + ( 5 x Altura(cm)) – (6,8 x Idade(anos))]}
 
 

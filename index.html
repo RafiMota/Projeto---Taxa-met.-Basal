@@ -26,7 +26,7 @@
 			<form action="main.js" method="post">
 				<section class="coluna">
 					<h2><strong>1°</strong> Informe suas medidas</h2>
-					<span><img src="assets/peso - tema escuro.png" alt=""></span>
+					<span><img src="assets/peso - tema escuro.png" alt="" /></span>
 					<label>Peso</label>
 					<input
 						id="peso"
@@ -35,7 +35,7 @@
 						onblur="getVal()"
 						maxlength="3"
 					/>
-					<span><img src="assets/idade - tema escuro.png" alt=""></span>
+					<span><img src="assets/idade - tema escuro.png" alt="" /></span>
 					<label>Idade</label>
 					<input
 						id="idade"
@@ -44,7 +44,7 @@
 						onblur="getVal()"
 						maxlength="3"
 					/>
-					<span><img src="assets/altura - tema escuro.png" alt=""></span>
+					<span><img src="assets/altura - tema escuro.png" alt="" /></span>
 					<label>Altura</label>
 					<input
 						id="altura"
@@ -75,37 +75,37 @@
 						onclick="attVal()"
 					/>
 				</section>
-			</form>
 
-			<section class="coluna">
-				<h2><strong>3°</strong> Informe seu nível de atividade</h2>
-				<label>Sedentário</label>
+				<section class="coluna">
+					<h2><strong>3°</strong> Informe seu nível de atividade</h2>
+					<label>Sedentário</label>
 					<input
 						type="radio"
-						name="genero"
+						name="atividade"
 						value="masculino"
 						maxlength="3"
-						onclick="attVal()"
+						onclick="atvMod()"
 					/>
-					<label>Ativo</label>
+					<label>Regularmente ativo</label>
+					<p>Exercita-se de 3 a 4 vezes na semana</p>
 					<input
 						type="radio"
-						name="genero"
+						name="atividade"
 						value="feminino"
 						maxlength="3"
-						onclick="attVal()"
+						onclick="atvMod()"
 					/>
 					<label>Altamente ativo</label>
-					<p>sts</p>
+					<p>Exercita-se de 5 a 6 vezes na semana</p>
 					<input
 						type="radio"
-						name="genero"
+						name="atividade"
 						value="feminino"
 						maxlength="3"
-						onclick="attVal()"
+						onclick="atvMod()"
 					/>
-			</section>
-
+				</section>
+			</form>
 			<p id="resultado"></p>
 		</main>
 
