@@ -57,6 +57,7 @@
 
         if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined || atvSelecionada == undefined) {
             document.getElementById("resultado").innerHTML = ""
+            document.getElementById("num_resultado").innerHTML = ""
         } else {
             if (genSelecionado == "masculino") {
                 resultado = parseFloat(atvSelecionada) * (5 + ((10 * parseInt(peso)) + (6.25 * parseInt(altura)) - (5 * parseInt(idade))))

@@ -19,6 +19,18 @@
 	background: #131313;
 }
 
+.gradient {
+    background: -webkit-linear-gradient(135deg, rgb(94, 196, 221), rgb(145, 100, 218), rgb(94, 196, 221), rgb(145, 100, 218));
+    background: linear-gradient(-45deg,rgb(94, 196, 221),rgb(145, 100, 218),rgb(132, 226, 132), rgb(145, 100, 218));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: gradient 3s ease infinite;
+    animation: gradient 1s ease infinite;
+	font-weight: bold;
+}
+
 .italic {
 	font-style: italic;
 }
