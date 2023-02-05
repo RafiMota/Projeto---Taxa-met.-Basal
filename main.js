@@ -33,6 +33,8 @@
         console.log(atvSelecionada)
         */
 
+        // Fórmula mais antiga
+
         // if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined || atvSelecionada == undefined) {
         //     document.getElementById("resultado").innerHTML = ""
         // } else {

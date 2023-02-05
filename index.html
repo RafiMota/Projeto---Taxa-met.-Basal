@@ -24,38 +24,41 @@
 
 		<main>
 			<form action="main.js" method="post">
-				<section class="coluna" id="coluna1">
+				<div class="coluna" id="coluna1">
 					<h2><strong>1°</strong> Informe suas medidas</h2>
 					<span><img src="assets/peso - tema escuro.png" alt="" /></span>
 					<label>Peso</label>
 					<input
 						id="peso"
-						type="text"
+						type="number"
 						placeholder="Kg"
 						onblur="attVal()"
-						maxlength="3"
+						min="1"
+						max="597"
 					/>
 					<span><img src="assets/idade - tema escuro.png" alt="" /></span>
 					<label>Idade</label>
 					<input
 						id="idade"
-						type="text"
+						type="number"
 						placeholder="Anos"
 						onblur="attVal()"
-						maxlength="3"
+						min="1"
+						max="122"
 					/>
 					<span><img src="assets/altura - tema escuro.png" alt="" /></span>
 					<label>Altura</label>
 					<input
 						id="altura"
-						type="text"
+						type="number"
 						placeholder="Cm"
 						onblur="attVal()"
-						maxlength="3"
+						min="1"
+						max="251"
 					/>
-				</section>
+				</div>
 
-				<section class="coluna" id="coluna2">
+				<div class="coluna" id="coluna2">
 					<h2><strong>2°</strong> Informe seu gênero</h2>
 
 					<label>Masculino</label>
@@ -76,9 +79,9 @@
 						maxlength="3"
 						onclick="attVal()"
 					/>
-				</section>
+				</div>
 
-				<section class="coluna" id="coluna3">
+				<div class="coluna" id="coluna3">
 					<h2><strong>3°</strong> Informe seu nível de atividade</h2>
 					<label>Sedentário</label>
 					<p>Não pratica exercícios físicos</p>
@@ -110,11 +113,12 @@
 						maxlength="3"
 						onclick="attVal()"
 					/>
-				</section>
+				</div>
 			</form>
 			<p id="resultadohidden">.</p>
 			<p id="resultado"></p>
 		</main>
+
 
 		<footer>
 			<a href="https://instagram.com/rafimota">@rafimota</a>

@@ -19,6 +19,13 @@
 	background: #131313;
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 html {
 	font-size: 62.5%;
 	background: #252525;
@@ -27,15 +34,15 @@ html {
 }
 
 a {
-    color: #fff;
-    font-size: 1.5rem;
+	color: #fff;
+	font-size: 1.5rem;
 }
 
 h1 {
 	padding-bottom: 1rem;
 	font-size: 4rem;
 	font-weight: 600;
-    text-align: center;
+	text-align: center;
 }
 
 h2 {
@@ -57,9 +64,9 @@ header {
 }
 
 footer {
-    padding: 4rem;
-    text-align: center;
-    background: #171717;
+	padding: 4rem;
+	text-align: center;
+	background: #171717;
 }
 
 label {
@@ -89,19 +96,18 @@ span > img {
 	font-size: 1.5rem;
 }
 
-#coluna1, #coluna3 {
-    float: left;
-    
+#coluna1,
+#coluna3 {
+	float: left;
 }
 
 @media screen and (max-width: 900px) {
 	.coluna {
 		width: 100%;
 	}
-
 }
 
-section > p {
+div > p {
 	margin: 10px;
 	font-size: 3rem;
 	font-weight: 200;
@@ -113,15 +119,14 @@ main {
 }
 
 p#resultado {
-	padding: 1rem;
+	padding: 0rem 1rem 4rem 1rem;
 	font-size: 3rem;
 	text-align: center;
 	font-weight: 500;
-
 }
 
 p#resultadohidden {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 /* main>p {
@@ -134,7 +139,7 @@ input {
 	border-color: black;
 	accent-color: red;
 	background-color: #171717;
-    color: white;
+	color: white;
 	text-align: center;
 	display: flex;
 	margin-left: auto;
