@@ -33,14 +33,14 @@ a {
 
 h1 {
 	padding-bottom: 1rem;
-	font-size: 5rem;
+	font-size: 4rem;
 	font-weight: 600;
     text-align: center;
 }
 
 h2 {
 	padding-bottom: 5rem;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 400;
 }
 
@@ -68,10 +68,10 @@ label {
 }
 
 span > img {
-	width: 4rem;
+	width: 4.5rem;
 	position: relative;
 	float: left;
-	left: 30%;
+	left: 25%;
 	/* display: block; */
 	/* left: 15rem; */
 	/* bottom: -5rem; */
@@ -89,10 +89,16 @@ span > img {
 	font-size: 1.5rem;
 }
 
+#coluna1, #coluna3 {
+    float: left;
+    
+}
+
 @media screen and (max-width: 900px) {
 	.coluna {
 		width: 100%;
 	}
+
 }
 
 section > p {
@@ -103,7 +109,7 @@ section > p {
 }
 
 main {
-	padding: 3rem;
+	padding-top: 3rem;
 }
 
 p#resultado {
@@ -130,7 +136,7 @@ input {
 	background-color: #171717;
     color: white;
 	text-align: center;
-	display: block;
+	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	width: 5rem;
