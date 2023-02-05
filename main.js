@@ -12,6 +12,9 @@
         let radioBtnGen = document.querySelectorAll('input[name="genero"]')
         let radioBtnAtv = document.querySelectorAll('input[name="atividade"]')
     
+
+        // Loop para verificar qual checkbox (radio) está selecionada
+        
         for(radioBtnAtv of radioBtnAtv) {
             if (radioBtnAtv.checked) {
                 atvSelecionada = radioBtnAtv.value
@@ -47,6 +50,10 @@
         // }
 
         // Fórmula Mifflin St Jeor
+
+        if(altura < 3) {
+            altura = altura * 100
+        }
 
         if(peso == 0 || idade == 0 || altura == 0 || genSelecionado == undefined || atvSelecionada == undefined) {
             document.getElementById("resultado").innerHTML = ""

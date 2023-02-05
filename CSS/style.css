@@ -19,6 +19,20 @@
 	background: #131313;
 }
 
+.italic {
+	font-style: italic;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.marcatexto {
+	background: #f33;
+	font-weight: 400;
+	color: #ddd;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -28,7 +42,7 @@ input::-webkit-inner-spin-button {
 
 html {
 	font-size: 62.5%;
-	background: #252525;
+	/* background: #252525; */
 	color: white;
 	font-family: "Poppins", sans-serif;
 }
@@ -36,19 +50,20 @@ html {
 a {
 	color: #fff;
 	font-size: 1.5rem;
+	text-decoration: none;
 }
 
 h1 {
 	padding-bottom: 1rem;
 	font-size: 4rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 }
 
 h2 {
-	padding-bottom: 5rem;
-	font-size: 2rem;
-	font-weight: 400;
+	padding-bottom: 4rem;
+	font-size: 2.5rem;
+	font-weight: 600;
 }
 
 header > h2 {
@@ -63,14 +78,29 @@ header {
 	background: #171717;
 }
 
+section {
+	background: #dddddd;
+	padding: 6rem;
+	color: #131313;
+}
+
+section>p {
+	font-size: 1.8rem;
+	text-align: left;
+	/* text-indent: 1rem; */
+	padding: 1rem 0rem;
+	letter-spacing: 0.1rem;
+	line-height: 3rem;
+}
+
 footer {
 	padding: 4rem;
-	text-align: center;
+	text-align: left;
 	background: #171717;
 }
 
 label {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 400;
 }
 
@@ -83,6 +113,12 @@ span > img {
 	/* left: 15rem; */
 	/* bottom: -5rem; */
 	/* background: #fff; */
+}
+
+a > img {
+	width: 2.5rem;
+	padding-right: 1rem;
+	vertical-align: middle;
 }
 
 .coluna {
@@ -116,6 +152,7 @@ div > p {
 
 main {
 	padding-top: 3rem;
+	background: #252525;
 }
 
 p#resultado {
@@ -140,13 +177,15 @@ input {
 	accent-color: red;
 	background-color: #171717;
 	color: white;
+
+	transition: 500ms;
 	text-align: center;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
 	width: 5rem;
 	height: 3rem;
-	margin-top: 1rem;
+	margin-top: 2rem;
 	margin-bottom: 5rem;
 }
 
