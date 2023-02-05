@@ -33,7 +33,29 @@
 	color: #ddd;
 }
 
-/* Chrome, Safari, Edge, Opera */
+.divider_light {
+	padding: 0.2rem;
+	border: none;
+	margin: 0rem;
+}
+
+.divider_dark {
+	padding: 0.2rem;
+	border: none;
+	margin: 0rem;
+	background-color: #000;
+}
+
+.divider_dark_mobile {
+	visibility: hidden;
+	padding: 0.1rem;
+	border: none;
+	margin: 0rem 2rem;
+	background-color: #171717;
+
+}
+
+/* Ocultar o botão do input number */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -42,8 +64,8 @@ input::-webkit-inner-spin-button {
 
 html {
 	font-size: 62.5%;
-	/* background: #252525; */
 	color: white;
+	background-color: #252525;
 	font-family: "Poppins", sans-serif;
 }
 
@@ -61,15 +83,23 @@ h1 {
 }
 
 h2 {
-	padding-bottom: 4rem;
+	padding: 4rem 0rem;
 	font-size: 2.5rem;
 	font-weight: 600;
 }
 
+h3 {
+	padding-bottom: 4rem;
+	font-size: 2.5rem;
+	font-weight: 600;
+
+}
+
 header > h2 {
-	padding-bottom: 0rem;
+	padding: 0rem;
 	font-size: 2.5rem;
 	font-weight: 400;
+	text-align: center;
 }
 
 header {
@@ -80,14 +110,13 @@ header {
 
 section {
 	background: #dddddd;
-	padding: 6rem;
+	padding: 3rem 6rem;
 	color: #131313;
 }
 
 section>p {
 	font-size: 1.8rem;
 	text-align: left;
-	/* text-indent: 1rem; */
 	padding: 1rem 0rem;
 	letter-spacing: 0.1rem;
 	line-height: 3rem;
@@ -109,17 +138,30 @@ span > img {
 	position: relative;
 	float: left;
 	left: 25%;
-	/* display: block; */
-	/* left: 15rem; */
-	/* bottom: -5rem; */
-	/* background: #fff; */
+}
+
+p > a {
+	color: #f33;
+	font-size: inherit;
+	font-weight: bolder;
+	text-decoration: underline;
 }
 
 a > img {
 	width: 2.5rem;
 	padding-right: 1rem;
 	vertical-align: middle;
+
 }
+
+img#instagram-logo {
+	padding-left: 1rem;
+}
+
+a:hover	{
+	opacity: 50%;
+}
+
 
 .coluna {
 	float: left;
@@ -137,9 +179,16 @@ a > img {
 	float: left;
 }
 
+form {
+	margin: 0rem;
+}
+
 @media screen and (max-width: 900px) {
 	.coluna {
 		width: 100%;
+	}
+	.divider_dark_mobile {
+		visibility: visible;
 	}
 }
 
@@ -152,23 +201,28 @@ div > p {
 
 main {
 	padding-top: 3rem;
+	padding-bottom: 0rem;
 	background: #252525;
 }
 
 p#resultado {
-	padding: 0rem 1rem 4rem 1rem;
-	font-size: 3rem;
+	padding: 0rem 2rem 2rem 2rem;
+	font-size: 2.5rem;
 	text-align: center;
 	font-weight: 500;
+	/* display: block; */
+}
+
+span#num_resultado {
+	display: table;
+	margin: auto;
+	margin-bottom: 5rem;
+	font-size: 3.5rem;
 }
 
 p#resultadohidden {
 	visibility: hidden;
 }
-
-/* main>p {
-    visibility: hidden;
-} */
 
 input {
 	border-radius: 5rem;

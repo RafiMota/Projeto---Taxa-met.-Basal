@@ -19,13 +19,15 @@
 	<body>
 		<header>
 			<h1>Calculadora de TMB</h1>
-			<h2>Um projeto do Rafí.</h2>
+			<h2>Um projeto do <span class="bold"> Rafí.</span></h2>
 		</header>
+
+		<hr class="divider_dark" />
 
 		<main>
 			<form action="main.js" method="post">
 				<div class="coluna" id="coluna1">
-					<h2><strong>1°</strong> Informe suas medidas</h2>
+					<h3><span class="bold">1°</span> Informe suas medidas</h3>
 					<span><img src="assets/peso - tema escuro.png" alt="" /></span>
 					<label>Peso</label>
 					<input
@@ -58,8 +60,10 @@
 					/>
 				</div>
 
+				<hr class="divider_dark_mobile" />
+
 				<div class="coluna" id="coluna2">
-					<h2><strong>2°</strong> Informe seu gênero</h2>
+					<h3><span class="bold">2°</span> Informe seu gênero</h3>
 
 					<label>Masculino</label>
 					<input
@@ -81,8 +85,10 @@
 					/>
 				</div>
 
+				<hr class="divider_dark_mobile" />
+
 				<div class="coluna" id="coluna3">
-					<h2><strong>3°</strong> Informe seu nível de atividade</h2>
+					<h3><span class="bold">3°</span> Informe seu nível de atividade</h3>
 					<label>Sedentário</label>
 					<p>Não pratica exercícios físicos</p>
 					<input
@@ -114,10 +120,16 @@
 						onclick="attVal()"
 					/>
 				</div>
+
+				<hr class="divider_dark_mobile" />
 			</form>
 			<p id="resultadohidden">.</p>
+			<!-- <p id="resultado"><p id="num_resultado" class="marcatexto"></p></p> -->
 			<p id="resultado"></p>
+			<span id="num_resultado" class="marcatexto"></span>
 		</main>
+
+		<hr class="divider_dark" />
 
 		<section>
 			<h2>O que é TMB?</h2>
@@ -136,11 +148,44 @@
 				<span class="italic">cutting</span>, onde a ingestão de calorias deve ser
 				menor do que se gasta ao dia.
 			</p>
+
+			<h2>Por que os testes variam?</h2>
+			<p>
+				Historicamente, a fórmula mais usada para determinar essa taxa foi a de
+				Harris-Benedict,
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1091498/"
+					>publicada em 1919</a
+				>.
+			</p>
+			<p>
+				Entretanto, quando comparamos as atividades feitas há mais de 100 anos,
+				época em que o estudo foi feito, com as atuais, devemos levar em
+				consideração a grande diferença entre estilos de vida.
+			</p>
+			<p>
+				Por isso, em 1990, <a href="https://academic.oup.com/ajcn/article-abstract/51/2/241/4695104?redirectedFrom=fulltext&login=false">uma nova fórmula</a> foi proposta por Mifflin St Jeor para calcular a mesma taxa, 
+				tendo uma taxa de precisão cerca de 5% maior.
+			</p>
 		</section>
+
+		<hr class="divider_dark" />
 
 		<footer>
 			<!-- <span><img src="assets/instagram - tema escuro.png" alt="instagram logo"></span> -->
-			<a href="https://instagram.com/rafimota"><img src="assets/instagram - tema escuro.png" alt="instagram logo">@rafimota</a>
+			<a href="https://github.com/rafimota"
+				><img
+					src="assets/github - tema escuro.png"
+					alt="github logo"
+					id="github-logo"
+				/>rafimota</a
+			>
+			<a href="https://instagram.com/rafimota"
+				><img
+					src="assets/instagram - tema escuro.png"
+					alt="instagram logo"
+					id="instagram-logo"
+				/>@rafimota</a
+			>
 		</footer>
 		<script src="main.js"></script>
 	</body>

@@ -63,7 +63,9 @@
             } else if (genSelecionado == "feminino") {
                 resultado = parseFloat(atvSelecionada) * (-161 + ((10 * parseInt(peso)) + (6.25 * parseInt(altura)) - (5 * parseInt(idade))))
             }
-            document.getElementById("resultado").innerHTML = "Seu consumo diário é de " + parseInt(resultado) + "Kcal"
+            document.getElementById("resultado").innerHTML = "Seu consumo diário é de "
+            document.getElementById("num_resultado").innerHTML = parseInt(resultado) + "Kcal"
+            // document.getElementById("num_resultado").innerHTML = "Kcal"
         }
     }
     
