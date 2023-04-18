@@ -1,0 +1,127 @@
+::selection {
+	background: #fff;
+	color: #171717;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #333;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #131313;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 100%;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+
+}
+
+html {
+}
+
+nav, ul {
+	list-style: none;
+}
+li a {
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.7;
+	transition: 0.2s
+}
+li a:hover {
+	opacity: 1;
+	font-size: 1.1em;
+	transition: 0.5s;
+}
+
+
+header {
+	background-color: #efefdebb;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 2em 5em;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+header nav {
+	display: flex;
+	
+}
+
+
+header li a {
+	color: #333;
+	font-weight: 600;
+	margin: 0em 1em;
+	
+}
+
+header li:first-child {
+	margin-left: 0em;
+}
+
+header li:last-child {
+	margin-right: 0em;
+}
+
+#fortitudine {
+	font-size: 2em;
+	font-weight: bold;
+	color: #dd9900;
+}
+
+@media(max-width: 700px) {
+	header {
+		flex-direction: column;
+	}
+
+	header nav {
+		margin-top: 1em;
+	}
+}
+
+.hero {
+	background-image: url(/assets/home.jpg);
+	background-size: cover;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero h1 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+}
+
+.hero h3 {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+.hero .btn {
+	background-color: #fff;
+	border-style: solid;
+	border-radius: 20px;
+}
