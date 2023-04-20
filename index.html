@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Belle Fortitudine</title>
+		<title>Cálculo de Metabolismo Basal</title>
 		<link rel="stylesheet" href="CSS/reset.css" />
 		<link rel="stylesheet" href="CSS/style.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,32 +14,179 @@
 			rel="stylesheet"
 		/>
 		<link rel="icon" type="image/x-icon" href="assets/logo site.png" />
-		<script
-			src="https://kit.fontawesome.com/31f7226351.js"
-			crossorigin="anonymous"
-		></script>
 	</head>
 
 	<body>
 		<header>
-			<a href="#"><span id="fortitudine">Belle Fortitudine</span></a>
-			<nav>
-				<li><a href="#a_cidade">A Cidade</a></li>
-				<li><a href="#contato">Contato</a></li>
-				<li><a href="#galeria">Galeria</a></li>
-				<li><a href="#visitar">Visitar</a></li>
-			</nav>
+			<h1>Calculadora de TMB</h1>
+			<h2>Um projeto do <span class="gradient"> Rafí.</span></h2>
 		</header>
 
-		<section class="hero">
-			<h1>Conheça o paraíso alencarino</h1>
-			<h3>"Gastronomia, cultura e diversão."</h3>
-			<a class="btn" href="">Saiba mais</a>
+		<hr class="divider_dark" />
+
+		<main>
+			<form action="main.js" method="post">
+				<div class="coluna" id="coluna1">
+					<h3><span class="bold">1°</span> Informe suas medidas</h3>
+					<span><img src="assets/peso - tema escuro.png" alt="" /></span>
+					<label>Peso</label>
+					<input
+						id="peso"
+						type="number"
+						placeholder="Kg"
+						onblur="attVal()"
+						min="1"
+						max="597"
+					/>
+					<span><img src="assets/idade - tema escuro.png" alt="" /></span>
+					<label>Idade</label>
+					<input
+						id="idade"
+						type="number"
+						placeholder="Anos"
+						onblur="attVal()"
+						min="1"
+						max="122"
+					/>
+					<span><img src="assets/altura - tema escuro.png" alt="" /></span>
+					<label>Altura</label>
+					<input
+						id="altura"
+						type="number"
+						placeholder="Cm"
+						onblur="attVal()"
+						min="1"
+						max="251"
+					/>
+				</div>
+
+				<hr class="divider_dark_mobile" />
+
+				<div class="coluna" id="coluna2">
+					<h3><span class="bold">2°</span> Informe seu gênero</h3>
+
+					<label>Masculino</label>
+					<input
+						type="radio"
+						class="radio_input"
+						name="genero"
+						value="masculino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Feminino</label>
+					<input
+						type="radio"
+						class="radio_input"
+						name="genero"
+						value="feminino"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+				</div>
+
+				<hr class="divider_dark_mobile" />
+
+				<div class="coluna" id="coluna3">
+					<h3><span class="bold">3°</span> Informe seu nível de atividade</h3>
+					<label>Sedentário</label>
+					<p>Não pratica exercícios físicos</p>
+					<input
+						type="radio"
+						class="radio_input"
+						name="atividade"
+						value="1.1"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Moderadamente ativo</label>
+					<p>Exercita-se de 3 a 4 vezes na semana</p>
+					<input
+						type="radio"
+						class="radio_input"
+						name="atividade"
+						value="1.4"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+					<label>Altamente ativo</label>
+					<p>Exercita-se de 5 a 6 vezes na semana</p>
+					<input
+						type="radio"
+						class="radio_input"
+						name="atividade"
+						value="1.6"
+						maxlength="3"
+						onclick="attVal()"
+					/>
+				</div>
+
+				<hr class="divider_dark_mobile" />
+			</form>
+			<p id="resultadohidden">.</p>
+			<!-- <p id="resultado"><p id="num_resultado" class="marcatexto"></p></p> -->
+			<p id="resultado"></p>
+			<span id="num_resultado" class="marcatexto"></span>
+		</main>
+
+		<hr class="divider_dark" />
+
+		<section>
+			<h2>O que é TMB?</h2>
+			<p>
+				TMB, ou <span class="bold"> Taxa Metabólica Basal</span>, é a quantidade
+				estimada de calorias que seu corpo gasta apenas para se manter vivo.
+			</p>
+			<p>
+				Considerando isso, é necessário que você consuma,
+				<span class="marcatexto">aproximadamente</span>, a quantidade de calorias
+				indicadas no resultado para que sua massa seja preservada.
+			</p>
+			<p>
+				Em dietas de <span class="italic">bulking</span> você deverá consumir mais
+				calorias do que o indicado. O contrário ocorrerá no
+				<span class="italic">cutting</span>, onde a ingestão de calorias deve ser
+				menor do que se gasta ao dia.
+			</p>
+
+			<h2>Por que os testes variam?</h2>
+			<p>
+				Historicamente, a fórmula mais usada para determinar essa taxa foi a de
+				Harris-Benedict,
+				<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1091498/"
+					>publicada em 1919</a
+				>.
+			</p>
+			<p>
+				Entretanto, quando comparamos as atividades feitas há mais de 100 anos,
+				época em que o estudo foi feito, com as atuais, devemos levar em
+				consideração a grande diferença entre estilos de vida.
+			</p>
+			<p>
+				Por isso, em 1990, <a href="https://academic.oup.com/ajcn/article-abstract/51/2/241/4695104?redirectedFrom=fulltext&login=false">uma nova fórmula</a> foi proposta por Mifflin St Jeor para calcular a mesma taxa, 
+				tendo uma taxa de precisão cerca de 5% maior.
+			</p>
 		</section>
 
-		<script
-			src="https://kit.fontawesome.com/31f7226351.js"
-			crossorigin="anonymous"
-		></script>
+		<hr class="divider_dark" />
+
+		<footer>
+			<!-- <span><img src="assets/instagram - tema escuro.png" alt="instagram logo"></span> -->
+			<a href="https://github.com/rafimota"
+				><img
+					src="assets/github - tema escuro.png"
+					alt="github logo"
+					id="github-logo"
+				/>rafimota</a
+			>
+			<a href="https://instagram.com/rafimota"
+				><img
+					src="assets/instagram - tema escuro.png"
+					alt="instagram logo"
+					id="instagram-logo"
+				/>@rafimota</a
+			>
+		</footer>
+		<script src="main.js"></script>
 	</body>
 </html>
