@@ -29,18 +29,18 @@
 
 }
 
-html {
-}
-
-nav, ul {
+nav,
+ul {
 	list-style: none;
 }
+
 li a {
 	text-decoration: none;
 	cursor: pointer;
 	opacity: 0.7;
 	transition: 0.2s
 }
+
 li a:hover {
 	opacity: 1;
 	font-size: 1.1em;
@@ -64,15 +64,14 @@ header {
 
 header nav {
 	display: flex;
-	
-}
 
+}
 
 header li a {
 	color: #333;
 	font-weight: 600;
 	margin: 0em 1em;
-	
+
 }
 
 header li:first-child {
@@ -111,17 +110,60 @@ header li:last-child {
 }
 
 .hero h1 {
-	font-size: 2.5em;
+	font-size: 3em;
 	margin-bottom: 0.5em;
 }
 
 .hero h3 {
 	font-size: 1.5em;
+	font-weight: 400;
 	margin-bottom: 2em;
+	font-style: italic;
 }
 
 .hero .btn {
+
+	font-size: 1.5em;
+	font-weight: bold;
+
 	background-color: #fff;
 	border-style: solid;
 	border-radius: 20px;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+
+	padding: 1em 2em;
+}
+
+.btn:hover {
+	filter: brightness(80%);
+}
+
+table {
+	margin: 1em auto;
+	padding: 1em;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+table, tr, td, th {
+	border: 2px solid;
+	border-radius: 10px;
+	width: 20em;
+}
+
+caption {
+	margin: 1em 0em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+td, th {
+	padding: 1em;
+	text-align: start;
 }
